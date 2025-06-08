@@ -50,7 +50,7 @@ kotlin {
 }
 
 android {
-    namespace = "com.example.mlp.shared"
+    namespace = "com.project.mlp.shared"
     compileSdk = libs.versions.android.compileSdk.get().toInt()
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11

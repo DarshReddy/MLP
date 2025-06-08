@@ -4,10 +4,10 @@ plugins {
     application
 }
 
-group = "com.example.mlp"
+group = "com.project.mlp"
 version = "1.0.0"
 application {
-    mainClass.set("com.example.mlp.ApplicationKt")
+    mainClass.set("com.project.mlp.ApplicationKt")
     
     val isDevelopment: Boolean = project.ext.has("development")
     applicationDefaultJvmArgs = listOf("-Dio.ktor.development=$isDevelopment")

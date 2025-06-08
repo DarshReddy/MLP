@@ -35,7 +35,7 @@ kotlin {
     
     @OptIn(ExperimentalWasmDsl::class)
     wasmJs {
-        moduleName = "composeApp"
+        outputModuleName = "composeApp"
         browser {
             val rootDirPath = project.rootDir.path
             val projectDirPath = project.projectDir.path
@@ -82,11 +82,11 @@ kotlin {
 }
 
 android {
-    namespace = "com.example.mlp"
+    namespace = "com.project.mlp"
     compileSdk = libs.versions.android.compileSdk.get().toInt()
 
     defaultConfig {
-        applicationId = "com.example.mlp"
+        applicationId = "com.project.mlp"
         minSdk = libs.versions.android.minSdk.get().toInt()
         targetSdk = libs.versions.android.targetSdk.get().toInt()
         versionCode = 1
@@ -114,11 +114,11 @@ dependencies {
 
 compose.desktop {
     application {
-        mainClass = "com.example.mlp.MainKt"
+        mainClass = "com.project.mlp.MainKt"
 
         nativeDistributions {
             targetFormats(TargetFormat.Dmg, TargetFormat.Msi, TargetFormat.Deb)
-            packageName = "com.example.mlp"
+            packageName = "com.project.mlp"
             packageVersion = "1.0.0"
         }
     }
